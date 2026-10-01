@@ -1,8 +1,11 @@
 export const SITE = {
   name: "Tholan Travels",
-  tagline: "Plan your next trip with Tholan Travels.",
-  phone: "+91 90000 00000",
-  whatsapp: "919000000000", // country code + number, no + or spaces
+  tamilName: "தோழன் டிராவல்ஸ்",
+  tagline: "Anamalai Call Taxi",
+  phone: "99762 64007",
+  altPhone: "94868 70757",
+  availability: "Available 24 Hours",
+  whatsapp: "919000000000", // placeholder kept intentionally; unconfirmed WhatsApp number
   email: "info@tholantravels.com",
   address: "Tamil Nadu, India",
   // Google Business Profile place id vachu maathikonga

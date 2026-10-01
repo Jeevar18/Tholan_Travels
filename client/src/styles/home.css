@@ -20,13 +20,21 @@
 
 /* navbar */
 .navbar { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--border); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 20px; }
-.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: var(--green-dark); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 20px; min-width: 0; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: var(--green-dark); white-space: nowrap; flex-shrink: 0; }
 .logo-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--green); color: #fff; display: grid; place-items: center; }
-.nav-links { display: flex; gap: 26px; margin-left: auto; }
-.nav-links a { font-weight: 500; }
+.nav-links { display: flex; gap: 26px; margin-left: auto; flex-wrap: nowrap; white-space: nowrap; min-width: 0; flex-shrink: 1; }
+.nav-links a { font-weight: 500; white-space: nowrap; }
 .nav-links a:hover { color: var(--green); }
+.nav-cta { flex-shrink: 0; white-space: nowrap; }
 .menu-btn { display: none; background: none; border: none; font-size: 26px; cursor: pointer; color: var(--green-dark); }
+
+@media (max-width: 1200px) {
+  .nav-inner { gap: 12px; }
+  .nav-links { gap: 12px; flex-wrap: wrap; row-gap: 4px; justify-content: center; }
+  .nav-links a { font-size: 0.9rem; }
+  .logo { font-size: 18px; }
+}
 
 /* cards */
 .card { background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,.04); }
@@ -96,6 +104,33 @@
 .cta { background: var(--green-dark); color: #fff; text-align: center; padding: 70px 0; scroll-margin-top: 70px; }
 .cta h2 { font-size: 32px; }
 .cta p { margin: 8px 0 26px; opacity: .9; }
+.contact-grid { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 28px; align-items: start; }
+.contact-info { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 18px; padding: 28px 24px; text-align: left; }
+.contact-kicker { display: inline-block; margin-bottom: 12px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.contact-info h2 { font-size: 38px; margin-bottom: 10px; }
+.service-tag { font-size: 18px; margin-bottom: 20px; }
+.contact-list { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+.contact-link { color: #fff; font-weight: 600; font-size: 1.05rem; }
+.contact-hours { font-weight: 600; opacity: .95; }
+.contact-actions { justify-content: flex-start; margin-top: 20px; }
+.booking-panel { background: #fff; color: var(--text); border-radius: 18px; padding: 28px; text-align: left; box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12); }
+.booking-header h3 { font-size: 32px; color: var(--green-dark); margin-bottom: 6px; }
+.booking-header p { color: var(--muted); margin-bottom: 20px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field.full-width { grid-column: 1 / -1; }
+.form-field label { font-weight: 600; color: var(--text); }
+.required { color: #dc2626; }
+.form-field input, .form-field select, .form-field textarea { width: 100%; border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font: inherit; color: var(--text); background: #fff; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--green); outline: 2px solid rgba(21, 128, 61, 0.12); }
+.form-field textarea { min-height: 120px; resize: vertical; }
+.field-error { color: #b91c1c; font-size: 12px; }
+.form-status { margin-top: 18px; border-radius: 12px; padding: 12px 14px; font-size: 14px; font-weight: 600; }
+.form-status.success { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.form-status.error { background: #fef2f2; color: #b91c1c; border: 1px solid #fca5a5; }
+.form-actions { margin-top: 18px; }
+.submit-btn { border: none; min-width: 180px; }
+.submit-btn:disabled { opacity: 0.75; cursor: wait; }
 .float-wa { position: fixed; right: 20px; bottom: 20px; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: grid; place-items: center; font-size: 28px; box-shadow: 0 4px 14px rgba(0,0,0,.25); z-index: 60; }
 
 /* footer */

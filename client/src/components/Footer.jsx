@@ -21,7 +21,8 @@ export default function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <p>📞 {SITE.phone}</p>
+          <a href="tel:9976264007">📞 {SITE.phone}</a>
+          <a href="tel:9486870757">📞 {SITE.altPhone}</a>
           <p>✉️ {SITE.email}</p>
           <p>📍 {SITE.address}</p>
         </div>
