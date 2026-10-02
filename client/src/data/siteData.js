@@ -1,3 +1,7 @@
+import athirapallyImage from "../assets/packages/athirapally.jpg";
+import valparaiImage from "../assets/packages/valparai.jpg";
+import pollachiImage from "../assets/packages/pollachi-surroundings.jpg";
+
 export const SITE = {
   name: "Tholan Travels",
   tamilName: "தோழன் டிராவல்ஸ்",
@@ -41,10 +45,9 @@ export const VEHICLES = [
 ];
 
 export const PACKAGES = [
-  { id: "valparai-tour", name: "Valparai Tour", destination: "Valparai", image: "", duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
-  { id: "pollachi-tour", name: "Pollachi Tour", destination: "Pollachi", image: "", duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
-  { id: "aliyar-dam-tour", name: "Aliyar Dam Tour", destination: "Aliyar Dam", image: "", duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
-  { id: "topslip-tour", name: "Topslip Tour", destination: "Topslip", image: "", duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
+  { id: "athirapally-tour", name: "Athirapally", destination: "Athirapally", image: athirapallyImage, duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
+  { id: "valparai-tour", name: "Valparai", destination: "Valparai", image: valparaiImage, duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
+  { id: "pollachi-surrounding-areas", name: "Pollachi Surrounding Areas", destination: "Pollachi Surrounding Areas", image: pollachiImage, duration: "", description: "", price: "Price on request", places: [], inclusions: [] },
 ];
 
 export const FEATURES = [

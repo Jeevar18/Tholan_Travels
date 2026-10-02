@@ -8,18 +8,22 @@ export default function GoogleReviews() {
     <section className="section google-reviews" id="google-reviews">
       <div className="container review-summary">
         <h2>Google Reviews</h2>
-        <p>Visit our Google listing to read or leave a review.</p>
         {hasReviewLink ? (
-          <a
-            className="btn btn-outline-green"
-            href={SITE.googleReviewLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open Google Reviews
-          </a>
+          <>
+            <p>Visit our Google listing to read or leave a review.</p>
+            <a
+              className="btn btn-outline-green"
+              href={SITE.googleReviewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Google Reviews
+            </a>
+          </>
         ) : (
-          <p className="muted-note">Google review link not configured yet.</p>
+          <p className="muted-note">
+            Google reviews are not available yet because a business review link has not been configured.
+          </p>
         )}
       </div>
     </section>

@@ -85,7 +85,7 @@
 .car-img { width: 100%; overflow: hidden; margin-bottom: 0; }
 .car-card p, .package-card p { color: var(--muted); font-size: 15px; }
 .package-card { overflow: hidden; }
-.package-image { height: 150px; background: linear-gradient(135deg, var(--green-light), #86efac); display: grid; place-items: center; font-size: 48px; overflow: hidden; }
+.package-image { aspect-ratio: 16 / 9; background: linear-gradient(135deg, var(--green-light), #86efac); display: grid; place-items: center; font-size: 48px; overflow: hidden; }
 .package-content { padding: 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .package-content h3 { margin: 0; }
 .package-content .package-destination { color: var(--green-dark); font-weight: 700; }
@@ -157,6 +157,7 @@
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .review-grid { columns: 1; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .hero h1 { font-size: 34px; }
   .hero { padding: 70px 0; }
 }

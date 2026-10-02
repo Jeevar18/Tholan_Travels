@@ -16,6 +16,8 @@ export default function Footer() {
           <a href="#about">About Us</a>
           <a href="#vehicles">Vehicles</a>
           <a href="#packages">Packages</a>
+          <a href="#customer-reviews">Customer Reviews</a>
+          <a href="#google-reviews">Google Reviews</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact Us</a>
         </div>
