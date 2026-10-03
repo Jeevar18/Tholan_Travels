@@ -1,0 +1,37 @@
+.page-banner { background: linear-gradient(135deg, var(--green-dark), var(--green)); color: #fff; text-align: center; padding: 70px 0; }
+.page-banner h1 { font-size: 40px; margin-bottom: 8px; }
+.page-banner p { opacity: .95; font-size: 18px; }
+
+.intro-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
+.eyebrow { color: var(--green); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; }
+.intro-title { font-size: 32px; color: var(--green-dark); margin: 6px 0 16px; }
+.intro-text { color: var(--muted); margin-bottom: 14px; }
+.intro-visual { height: 300px; border-radius: 24px; background: linear-gradient(135deg, var(--green-light), #86efac); display: grid; place-items: center; font-size: 110px; }
+
+.stats-band { background: var(--green-dark); color: #fff; padding: 60px 0; }
+.stats-title { text-align: center; font-size: 30px; margin-bottom: 30px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+.stat strong { display: block; font-size: 40px; color: #bbf7d0; }
+.stat span { opacity: .9; }
+
+.area-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.chip { background: var(--green-bg); border: 1px solid var(--green-light); color: var(--green-dark); padding: 10px 20px; border-radius: 999px; font-weight: 500; }
+
+.owner-card { display: flex; align-items: center; gap: 28px; padding: 30px; max-width: 800px; margin: 0 auto 30px; }
+.owner-avatar, .team-avatar { border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; font-weight: 700; flex-shrink: 0; }
+.owner-avatar { width: 110px; height: 110px; font-size: 44px; }
+.owner-role { color: var(--green); font-weight: 600; display: block; margin: 2px 0 10px; }
+.owner-card p { color: var(--muted); font-style: italic; }
+.team-card { padding: 26px; text-align: center; }
+.team-avatar { width: 72px; height: 72px; font-size: 28px; margin: 0 auto 12px; }
+.team-card p { color: var(--muted); }
+
+@media (max-width: 900px) {
+  .intro-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+  .page-banner h1 { font-size: 30px; }
+  .owner-card { flex-direction: column; text-align: center; }
+  .intro-visual { height: 200px; font-size: 80px; }
+}

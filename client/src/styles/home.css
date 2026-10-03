@@ -163,3 +163,18 @@
 }
 .review-empty { max-width: 520px; margin: 0 auto; }
 .review-empty p { margin-bottom: 18px; }
+/* logo */
+.logo img { height: 56px; width: auto; display: block; }
+
+/* reviews (pollachitours style) */
+.btn-block { display: block; width: 100%; border-radius: 8px; text-align: center; }
+.avatar-stack { display: flex; justify-content: center; margin: 14px 0 20px; }
+.avatar-stack .avatar { margin-left: -10px; border: 2px solid #fff; }
+.avatar-stack .avatar:first-child { margin-left: 0; }
+.avatar.more { background: #374151; font-size: 12px; }
+.owner-reply { background: var(--green-bg); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+.owner-reply strong { display: block; font-size: 13px; margin-bottom: 4px; }
+.owner-reply p { font-size: 14px; color: var(--muted); }
+.review-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+.review-foot .view-google { margin: 0; padding: 0; border: 0; }
+.share-btn { background: none; border: none; cursor: pointer; color: var(--text); display: grid; place-items: center; }

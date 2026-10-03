@@ -14,12 +14,13 @@ export const SITE = {
   address: "Tamil Nadu, India",
   // Google Business Profile place id vachu maathikonga
   googleReviewLink:
-    "https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID",
+    "https://www.google.com/maps/place/Tholan+travels/@10.577006,77.173133,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba83387103056f7:0x8921378ea5ad314c!8m2!3d10.577006!4d77.173133!16s%2Fg%2F11ntnz8lst?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D",
 };
 
 // Real review vantha inga add pannunga. Example:
 // { name: "Arun Kumar", time: "1 month ago", stars: 5, text: "Very good service!" },
 // (optional) link: "google review direct link" kudutha "View on Google" antha link ku pogum
+
 export const REVIEWS = [];
 
 export const DESTINATIONS = [
@@ -65,3 +66,31 @@ export const GALLERY = [
   { id: "waterfalls", title: "Waterfalls", image: "", icon: "💧" },
   { id: "travel", title: "Vehicles and travel", image: "", icon: "🚐" },
 ];
+// ---------- About page (real details vachu maathikonga) ----------
+export const ABOUT = {
+  intro: [
+    "Tholan Travels is a trusted travel partner offering safe, comfortable and affordable car and tempo traveller services for families, groups and pilgrims.",
+    "From local rentals to long outstation trips, hill station tours and temple circuits, we make every journey smooth with clean vehicles and experienced drivers.",
+  ],
+  stats: [
+    { value: "5+", label: "Years of Experience" },
+    { value: "1000+", label: "Happy Trips" },
+    { value: "10+", label: "Vehicles" },
+    { value: "24/7", label: "Customer Support" },
+  ],
+  areas: [
+    "Anaimalai", "Pollachi", "Coimbatore", "Udumalpet", "Palani",
+    "Valparai", "Ooty", "Kodaikanal", "Munnar", "Madurai", "Rameswaram", "Kanyakumari",
+  ],
+  owner: {
+    name: "Owner Name",
+    role: "Founder & Owner",
+    message:
+      "Our goal is simple: every customer should reach their destination safely, on time and with a smile.",
+  },
+  team: [
+    { name: "Driver Name", role: "Senior Driver" },
+    { name: "Driver Name", role: "Tour Coordinator" },
+    { name: "Staff Name", role: "Customer Support" },
+  ],
+};
